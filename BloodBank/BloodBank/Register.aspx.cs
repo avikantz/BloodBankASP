@@ -28,6 +28,15 @@ namespace BloodBank {
 		}
 
 		protected void Page_Load(object sender, EventArgs e) {
+			try {
+				string username = Session["id"].ToString();
+				if (username.Length > 0) {
+					Response.Redirect("~/Profile.aspx");
+					return;
+				} else {
+				}
+			} catch {
+			}
 			Page.Title = "Register";
 			// Check if logged in and redirect to profile
 		}

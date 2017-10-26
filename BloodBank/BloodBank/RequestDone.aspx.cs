@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Configuration;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
@@ -43,7 +44,7 @@ namespace BloodBank {
 				SqlDataReader requestReader = requestCommand.ExecuteReader();
 				requestReader.Read();
 				string patientname = requestReader["patientname"].ToString();
-				string patientno = requestReader["phoneno"].ToString();
+				string patientno = requestReader["mobileno"].ToString();
 				requestReader.Close();
 
 				var accountSid = "ACab3e465e67051257d227bf49a3c9a58e";
@@ -57,8 +58,13 @@ namespace BloodBank {
 					body: "Your blood is required by " + patientname + ". Contact them at " + patientno + ".");
 
 				titleLabel.Text = "Your request is underway!";
-				infoLabel.Text = donorname + " has been informed about your need for blood. Watch out for vampires!\nTransaction id: " + message.Sid.ToString();
-				
+				infoLabel.Text = donorname + " has been informed about your need for blood. Watch out for vampires! \n\nTransaction id: " + message.Sid.ToString();
+
+				HtmlMeta meta = new HtmlMeta();
+				meta.HttpEquiv = "Refresh";
+				meta.Content = "5;url=Default.aspx";
+				this.Page.Controls.Add(meta);
+
 			}
 		}
 	}

@@ -10,24 +10,24 @@
 namespace BloodBank {
     
     
-    public partial class _Default {
+    public partial class Profile {
         
         /// <summary>
-        /// loggedIn control.
+        /// datasource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel loggedIn;
+        protected global::System.Web.UI.WebControls.SqlDataSource datasource1;
         
         /// <summary>
-        /// notLoggedIn control.
+        /// detailsView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel notLoggedIn;
+        protected global::System.Web.UI.WebControls.DetailsView detailsView;
     }
 }

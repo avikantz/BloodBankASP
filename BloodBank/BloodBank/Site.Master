@@ -51,8 +51,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-						<li><a runat="server" href="~/Search.aspx">Search</a></li>
-                        <li><a runat="server" href="~/Request.aspx">Post Your Requirement</a></li>
+                        <li><a runat="server" href="~/Search.aspx">Post Your Requirement</a></li>
                     </ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a runat="server" href="~/Profile.aspx"><asp:Label runat="server" ID="profileLabel" Text=""></asp:Label></a></li>

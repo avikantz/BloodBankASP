@@ -5,7 +5,7 @@
 
 	<br />
 
-	<h3>Requesting from:</h3>
+	<h3>Details:</h3>
 	<br />
 	<asp:SqlDataSource ID="datasource1" runat="server" ConnectionString="<%$ ConnectionStrings:ITLPConnectionString %>" SelectCommand="SELECT [name], [dob], [gender], [bloodgroup], [weight], [phoneno], [emailid], [address], [city], [state] FROM [Donor] WHERE ([emailid] = @emailid)">
 		<SelectParameters>
