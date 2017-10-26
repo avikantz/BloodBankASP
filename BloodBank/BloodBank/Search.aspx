@@ -11,7 +11,6 @@
 	<div class="form-group">
 		<label for="bloodGroupRadio">Blood Group:</label>
 		<asp:RadioButtonList runat="server" ID="bloodGroupRadio">
-			<asp:ListItem>Any</asp:ListItem>
 			<asp:ListItem>A-</asp:ListItem>
 			<asp:ListItem>A+</asp:ListItem>
 			<asp:ListItem>B-</asp:ListItem>
@@ -27,9 +26,10 @@
 		<asp:Button ID="searchButton" runat="server" CssClass="btn btn-default" OnClick="searchButton_Click" Text="Search" />
 	</div>
 
-	<asp:SqlDataSource runat="server" ID="datasource1" ConnectionString="<%$ ConnectionStrings:ITLPConnectionString %>" SelectCommand="SELECT [name], [gender], [bloodgroup], [emailid], [phoneno], [city] FROM [Donor] WHERE ([city] LIKE '%' + @city + '%') ORDER BY [name]">
+	<asp:SqlDataSource runat="server" ID="datasource1" ConnectionString="<%$ ConnectionStrings:ITLPConnectionString %>" SelectCommand="SELECT [name], [gender], [bloodgroup], [city], [emailid], [phoneno] FROM [Donor] WHERE (([city] LIKE '%' + @city + '%') AND ([bloodgroup] = @bloodgroup))">
 		<SelectParameters>
 			<asp:ControlParameter ControlID="cityBox" DefaultValue="" Name="city" PropertyName="Text" Type="String" />
+			<asp:ControlParameter ControlID="bloodGroupRadio" Name="bloodgroup" PropertyName="SelectedValue" Type="String" />
 		</SelectParameters>
 	</asp:SqlDataSource>
 

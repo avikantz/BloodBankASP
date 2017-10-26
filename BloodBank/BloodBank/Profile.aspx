@@ -4,22 +4,31 @@
 		<SelectParameters>
 			<asp:SessionParameter Name="username" SessionField="id" Type="String" />
 		</SelectParameters>
-	</asp:SqlDataSource>
-	<asp:DetailsView runat="server" ID="detailsView" AutoGenerateRows="False" DataSourceID="datasource1">
+</asp:SqlDataSource>
+	<br />
+	<asp:DetailsView runat="server" ID="detailsView" AutoGenerateRows="False" DataSourceID="datasource1" CellPadding="4" ForeColor="#333333" GridLines="None">
+		<AlternatingRowStyle BackColor="White" />
+		<CommandRowStyle BackColor="#D1DDF1" Font-Bold="True" />
+		<EditRowStyle BackColor="#2461BF" />
+		<FieldHeaderStyle BackColor="#DEE8F5" Font-Bold="True" />
 		<Fields>
-			<asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
+			<asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
 			<asp:BoundField DataField="username" HeaderText="username" SortExpression="username" />
-			<asp:BoundField DataField="dob" HeaderText="dob" SortExpression="dob" />
-			<asp:BoundField DataField="gender" HeaderText="gender" SortExpression="gender" />
-			<asp:BoundField DataField="bloodgroup" HeaderText="bloodgroup" SortExpression="bloodgroup" />
-			<asp:BoundField DataField="weight" HeaderText="weight" SortExpression="weight" />
-			<asp:BoundField DataField="phoneno" HeaderText="phoneno" SortExpression="phoneno" />
-			<asp:BoundField DataField="emailid" HeaderText="emailid" SortExpression="emailid" />
-			<asp:BoundField DataField="address" HeaderText="address" SortExpression="address" />
-			<asp:BoundField DataField="city" HeaderText="city" SortExpression="city" />
-			<asp:BoundField DataField="state" HeaderText="state" SortExpression="state" />
-			<asp:BoundField DataField="datelastdonation" HeaderText="datelastdonation" SortExpression="datelastdonation" />
-			<asp:BoundField DataField="dateregistered" HeaderText="dateregistered" SortExpression="dateregistered" />
+			<asp:BoundField DataField="dob" HeaderText="Date of Birth" SortExpression="dob" />
+			<asp:BoundField DataField="gender" HeaderText="Gender" SortExpression="gender" />
+			<asp:BoundField DataField="bloodgroup" HeaderText="Blood Group" SortExpression="bloodgroup" />
+			<asp:BoundField DataField="weight" HeaderText="Weight" SortExpression="weight" />
+			<asp:BoundField DataField="phoneno" HeaderText="Phone No" SortExpression="phoneno" />
+			<asp:BoundField DataField="emailid" HeaderText="Email address" SortExpression="emailid" />
+			<asp:BoundField DataField="address" HeaderText="Street Address" SortExpression="address" />
+			<asp:BoundField DataField="city" HeaderText="City" SortExpression="city" />
+			<asp:BoundField DataField="state" HeaderText="State" SortExpression="state" />
+			<asp:BoundField DataField="datelastdonation" HeaderText="Date of Last Donation" SortExpression="datelastdonation" />
+			<asp:BoundField DataField="dateregistered" HeaderText="Date of Registration" SortExpression="dateregistered" />
 		</Fields>
-	</asp:DetailsView>
+		<FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+		<HeaderStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />
+		<PagerStyle BackColor="#2461BF" ForeColor="White" HorizontalAlign="Center" />
+		<RowStyle BackColor="#EFF3FB" />
+</asp:DetailsView>
 </asp:Content>
