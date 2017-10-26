@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Globalization;
 
 namespace BloodBank {
 
@@ -37,7 +38,7 @@ namespace BloodBank {
 				SqlCommand cmd = new SqlCommand(sql, conn);
 				cmd.Parameters.Add("@param1", SqlDbType.Int).Value = GetAutoID();
 				cmd.Parameters.Add("@param2", SqlDbType.Text).Value = nameBox.Text;
-				cmd.Parameters.Add("@param3", SqlDbType.Date).Value = dobBox.Text;
+				cmd.Parameters.Add("@param3", SqlDbType.Date).Value = DateTime.ParseExact(dobBox.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 				cmd.Parameters.Add("@param4", SqlDbType.Text).Value = genderRadio.SelectedValue;
 				cmd.Parameters.Add("@param5", SqlDbType.Text).Value = bloodGroupRadio.SelectedValue;
 				cmd.Parameters.Add("@param6", SqlDbType.Float).Value = float.Parse(weightBox.Text);
@@ -46,10 +47,10 @@ namespace BloodBank {
 				cmd.Parameters.Add("@param9", SqlDbType.Text).Value = addressBox.Text;
 				cmd.Parameters.Add("@param10", SqlDbType.Text).Value = cityBox.Text;
 				cmd.Parameters.Add("@param11", SqlDbType.Text).Value = stateBox.Text;
-				cmd.Parameters.Add("@param12", SqlDbType.Date).Value = dateLastDonated.Text;
+				cmd.Parameters.Add("@param12", SqlDbType.Date).Value = DateTime.ParseExact(dateLastDonated.Text, "MM/dd/yyyy", CultureInfo.InvariantCulture);
 				cmd.Parameters.Add("@param13", SqlDbType.Text).Value = usernameBox.Text;
 				cmd.Parameters.Add("@param14", SqlDbType.Text).Value = passwordBox.Text;
-				cmd.Parameters.Add("@param15", SqlDbType.Text).Value = DateTime.Now.ToString("d");
+				cmd.Parameters.Add("@param15", SqlDbType.Text).Value = DateTime.Now;
 				cmd.CommandType = CommandType.Text;
 				conn.Open();
 				cmd.ExecuteNonQuery();

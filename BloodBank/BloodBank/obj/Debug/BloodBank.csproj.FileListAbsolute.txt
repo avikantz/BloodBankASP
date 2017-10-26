@@ -168,3 +168,10 @@ Y:\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\obj\Debug\BloodBank.pd
 \\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.AI.ServerTelemetryChannel.xml
 \\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.AI.WindowsServer.xml
 \\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.AI.Web.xml
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.IdentityModel.Logging.dll
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.IdentityModel.Tokens.dll
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\System.IdentityModel.Tokens.Jwt.dll
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Twilio.dll
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Microsoft.IdentityModel.Tokens.xml
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\System.IdentityModel.Tokens.Jwt.xml
+\\Mac\Home\Documents\My Web Sites\Lab Project\BloodBank\BloodBank\bin\Twilio.xml

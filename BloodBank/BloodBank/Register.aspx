@@ -10,7 +10,7 @@
 	<asp:RequiredFieldValidator runat="server" ID="nameValidator" ControlToValidate="nameBox" ErrorMessage="Enter a name, you must."></asp:RequiredFieldValidator>
 	<div class="form-group">
 		<label for="dobBox">Date of Birth:</label>
-		<asp:TextBox runat="server" CssClass="form-control" ID="dobBox" Placeholder="Date of birth"></asp:TextBox>
+		<asp:TextBox runat="server" CssClass="form-control" ID="dobBox" Placeholder="Date of birth (MM/dd/yyyy)"></asp:TextBox>
 	</div>
 	<asp:CompareValidator ID="dateValidator" runat="server" Type="Date" Operator="DataTypeCheck" ControlToValidate="dobBox" ErrorMessage="Please enter a valid date."></asp:CompareValidator>
 	<asp:RangeValidator id="rngDate" ControlToValidate="dobBox" type="Date" minimumvalue="10/26/57" maximumvalue="10/26/99" ErrorMessage="You must be over 18 years of age!" display="Dynamic" runat="server"></asp:RangeValidator>
@@ -70,7 +70,7 @@
 	<asp:RequiredFieldValidator runat="server" ID="ReqV7" ControlToValidate="cityBox"></asp:RequiredFieldValidator>
 	<div class="form-group">
 		<label for="dateLastDonated">Date of last blood donation:</label>
-		<asp:TextBox runat="server" ID="dateLastDonated" CssClass="form-control" Placeholder="Date of last donation"></asp:TextBox>
+		<asp:TextBox runat="server" ID="dateLastDonated" CssClass="form-control" Placeholder="Date of last donation (MM/dd/yyyy)"></asp:TextBox>
 	</div>
 	<asp:RequiredFieldValidator runat="server" ID="ReqV8" ControlToValidate="dateLastDonated"></asp:RequiredFieldValidator>
 	<div class="form-group">
