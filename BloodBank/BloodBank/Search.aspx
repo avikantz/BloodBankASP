@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="form-group">
-		<asp:Button ID="searchButton" runat="server" CssClass="btn btn-default" OnClick="searchButton_Click" />
+		<asp:Button ID="searchButton" runat="server" CssClass="btn btn-default" OnClick="searchButton_Click" Text="Search" />
 	</div>
 
 	<asp:SqlDataSource runat="server" ID="datasource1" ConnectionString="<%$ ConnectionStrings:ITLPConnectionString %>" SelectCommand="SELECT [name], [gender], [bloodgroup], [emailid], [phoneno], [city] FROM [Donor] WHERE ([city] LIKE '%' + @city + '%') ORDER BY [name]">
@@ -41,7 +41,7 @@
 			<asp:BoundField DataField="emailid" HeaderText="Email Address" SortExpression="emailid" />
 			<asp:BoundField DataField="phoneno" HeaderText="Phone Number" SortExpression="phoneno" />
 			<asp:BoundField DataField="city" HeaderText="City" SortExpression="city" />
-			<asp:ButtonField CommandName="Select_Row" Text="Select" />
+			<asp:ButtonField CommandName="Select_Row" Text="Request Blood" />
 		</Columns>
 	</asp:GridView>
 

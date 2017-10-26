@@ -23,7 +23,7 @@ namespace BloodBank
 				int index = Convert.ToInt32(e.CommandArgument);
 				GridViewRow row = gridView.Rows[index];
 				string email = row.Cells[3].Text;
-				Response.Redirect("Requitement.aspx?email=" + email);
+				Response.Redirect("Requirement.aspx?email=" + email);
 			}
 		}
 	}
