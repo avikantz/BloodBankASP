@@ -10,33 +10,51 @@
 namespace BloodBank {
     
     
-    public partial class SiteMaster {
+    public partial class Search {
         
         /// <summary>
-        /// profileLabel control.
+        /// cityBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label profileLabel;
+        protected global::System.Web.UI.WebControls.TextBox cityBox;
         
         /// <summary>
-        /// logoutButton control.
+        /// bloodGroupRadio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button logoutButton;
+        protected global::System.Web.UI.WebControls.RadioButtonList bloodGroupRadio;
         
         /// <summary>
-        /// MainContent control.
+        /// searchButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.Button searchButton;
+        
+        /// <summary>
+        /// datasource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource datasource1;
+        
+        /// <summary>
+        /// gridView control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gridView;
     }
 }

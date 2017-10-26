@@ -40,13 +40,22 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.TextBox dobBox;
         
         /// <summary>
-        /// dobValidator control.
+        /// dateValidator control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CustomValidator dobValidator;
+        protected global::System.Web.UI.WebControls.CompareValidator dateValidator;
+        
+        /// <summary>
+        /// rngDate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rngDate;
         
         /// <summary>
         /// genderRadio control.
@@ -112,6 +121,15 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
+        /// RegXV1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegXV1;
+        
+        /// <summary>
         /// emailBox control.
         /// </summary>
         /// <remarks>
@@ -119,6 +137,24 @@ namespace BloodBank {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox emailBox;
+        
+        /// <summary>
+        /// RequiredFieldValidator4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
+        /// RegXV2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegXV2;
         
         /// <summary>
         /// addressBox control.
@@ -130,6 +166,15 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.TextBox addressBox;
         
         /// <summary>
+        /// ReqV5 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV5;
+        
+        /// <summary>
         /// cityBox control.
         /// </summary>
         /// <remarks>
@@ -137,6 +182,15 @@ namespace BloodBank {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox cityBox;
+        
+        /// <summary>
+        /// ReqV6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV6;
         
         /// <summary>
         /// stateBox control.
@@ -148,6 +202,15 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.TextBox stateBox;
         
         /// <summary>
+        /// ReqV7 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV7;
+        
+        /// <summary>
         /// dateLastDonated control.
         /// </summary>
         /// <remarks>
@@ -155,6 +218,15 @@ namespace BloodBank {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox dateLastDonated;
+        
+        /// <summary>
+        /// ReqV8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV8;
         
         /// <summary>
         /// usernameBox control.
@@ -166,6 +238,24 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.TextBox usernameBox;
         
         /// <summary>
+        /// ReqV9 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV9;
+        
+        /// <summary>
+        /// CV6 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CustomValidator CV6;
+        
+        /// <summary>
         /// passwordBox control.
         /// </summary>
         /// <remarks>
@@ -175,6 +265,15 @@ namespace BloodBank {
         protected global::System.Web.UI.WebControls.TextBox passwordBox;
         
         /// <summary>
+        /// ReqV10 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator ReqV10;
+        
+        /// <summary>
         /// retypePasswordBox control.
         /// </summary>
         /// <remarks>
@@ -182,5 +281,14 @@ namespace BloodBank {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox retypePasswordBox;
+        
+        /// <summary>
+        /// CompareV1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareV1;
     }
 }

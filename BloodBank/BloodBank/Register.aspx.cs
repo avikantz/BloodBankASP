@@ -27,12 +27,13 @@ namespace BloodBank {
 		}
 
 		protected void Page_Load(object sender, EventArgs e) {
-
+			Page.Title = "Register";
+			// Check if logged in and redirect to profile
 		}
 
 		protected void RegisterAction(object sender, EventArgs e) {
 			using (SqlConnection conn = new SqlConnection(connection_string)) {
-				string sql = "INSERT INTO [Donor] (id, name, dob, gender, bloodgroup, weight, phoneno, emailid, address, city, state, datelastdonation) VALUES (@param1, @param2, @param3, @param4, @param5, @param6, @param7, @param8, @param9, @param10, @param11, @param12)";
+				string sql = "INSERT INTO [Donor] (id, name, dob, gender, bloodgroup, weight, phoneno, emailid, address, city, state, datelastdonation, username, password, dateregistered) VALUES (@param1, @param2, @param3, @param4, @param5, @param6, @param7, @param8, @param9, @param10, @param11, @param12, @param13, @param14, @param15)";
 				SqlCommand cmd = new SqlCommand(sql, conn);
 				cmd.Parameters.Add("@param1", SqlDbType.Int).Value = GetAutoID();
 				cmd.Parameters.Add("@param2", SqlDbType.Text).Value = nameBox.Text;
@@ -46,12 +47,24 @@ namespace BloodBank {
 				cmd.Parameters.Add("@param10", SqlDbType.Text).Value = cityBox.Text;
 				cmd.Parameters.Add("@param11", SqlDbType.Text).Value = stateBox.Text;
 				cmd.Parameters.Add("@param12", SqlDbType.Date).Value = dateLastDonated.Text;
+				cmd.Parameters.Add("@param13", SqlDbType.Text).Value = usernameBox.Text;
+				cmd.Parameters.Add("@param14", SqlDbType.Text).Value = passwordBox.Text;
+				cmd.Parameters.Add("@param15", SqlDbType.Text).Value = DateTime.Now.ToString("d");
 				cmd.CommandType = CommandType.Text;
 				conn.Open();
 				cmd.ExecuteNonQuery();
+				Response.Redirect("Login.aspx");
 			}
 		}
 
+		protected void Username_ServerValidate( object source, ServerValidateEventArgs args ) {
+			// Look in the database for any such row
+			if (args.Value.Length > 5) {
+				args.IsValid = true;
+			} else {
+				args.IsValid = false;
+			}
+		}
 	}
 
 }
