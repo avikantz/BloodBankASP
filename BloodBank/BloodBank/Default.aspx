@@ -10,7 +10,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
-				<h3><a href="~/Search.aspx">Post your Requirement</a></h3>
+				<h3><a href="Search.aspx">Post your Requirement</a></h3>
 				<p>Look for blood donors.</p>
 			</div>
 			<asp:Panel ID="loggedIn" runat="server">
